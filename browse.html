@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/Assets/Untitled-design-Picsart-BackgroundRemover.ico">
+  <title>ShareSpace | Browse Items</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+
+  <div class="page no-sidebar">
+    <header class="site-header">
+      <div class="header-inner">
+        <label for="nav-toggle" class="nav-toggle-btn">☰</label>
+
+        <a href="index.html" class="logo">
+          <div class="logo-image">
+  <img src="/Assets/Untitled-design-Picsart-BackgroundRemover.ico" alt="ShareSpace Logo">
+</div>
+
+          <div class="logo-text">
+            <span class="logo-title">ShareSpace</span>
+            <span class="logo-tagline">Share more, spend less</span>
+          </div>
+        </a>
+
+        <form class="search-bar">
+          <input type="text" placeholder="Search items, categories, or users…" />
+        </form>
+
+        <div class="header-right">
+          <label for="theme-toggle" class="theme-switch">
+            <span class="theme-icon theme-icon-sun">☀</span>
+            <span class="theme-icon theme-icon-moon">🌙</span>
+            <span class="theme-switch-knob"></span>
+          </label>
+
+          <div class="profile-menu">
+            <button type="button" class="profile-trigger">
+              <span class="avatar-circle">U</span>
+              <span class="profile-label">Account ▾</span>
+            </button>
+            <div class="profile-dropdown">
+              <a href="auth.html#login">Login</a>
+              <a href="auth.html#signup">Sign up with College ID</a>
+              <a href="#my-rentals">My Rentals</a>
+              <a href="#my-listings">My Listings</a>
+              <a href="item.html">Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section-with-filters">
+        <div class="section-heading">
+          <h1>Browse items</h1>
+          <p>Explore what students and faculty are sharing around KIET.</p>
+        </div>
+
+        <div class="filters-row">
+          <div class="filter-group">
+            <label for="filter-category">Category</label>
+            <select id="filter-category">
+              <option>All</option>
+              <option>Sports</option>
+              <option>Stationery</option>
+              <option>Entertainment</option>
+              <option>Miscellaneous</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-availability">Availability</label>
+            <select id="filter-availability">
+              <option>Any</option>
+              <option>Available now</option>
+              <option>Booked</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-price">Price range</label>
+            <select id="filter-price">
+              <option>Any</option>
+              <option>Under ₹30/day</option>
+              <option>₹30–₹60/day</option>
+              <option>₹60+/day</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sports -->
+      <section id="sports" class="items-section">
+        <div class="section-heading">
+          <h2>Sports</h2>
+          <p>Gear up for tournaments and friendly matches.</p>
+        </div>
+
+        <div class="items-grid">
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/badminton.jpg" alt="Badminton" />
+              <span class="badge badge-sports">Sports</span>
+            </div>
+            <div class="item-body">
+              <h3>Badminton Racket Set</h3>
+              <p>Includes 2 rackets and shuttlecock. Perfect for hostel courts.</p>
+              <p class="item-meta">Available at KIET • From ₹50/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/Football.jpeg" alt="Football" />
+              <span class="badge badge-sports">Sports</span>
+            </div>
+            <div class="item-body">
+              <h3>Weekend Football</h3>
+              <p>Match-quality football for evening practice on KIET ground.</p>
+              <p class="item-meta">Available at KIET • From ₹40/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Stationery -->
+      <section id="stationery" class="items-section">
+        <div class="section-heading">
+          <h2>Stationery</h2>
+          <p>Be exam-ready without buying everything.</p>
+        </div>
+
+        <div class="items-grid">
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/calculator2.jpg" alt="Calculator" />
+              <span class="badge badge-stationery">Stationery</span>
+            </div>
+            <div class="item-body">
+              <h3>Calculator for Exams</h3>
+              <p>Casio scientific calculator, suitable for engineering exams.</p>
+              <p class="item-meta">Available at KIET • From ₹25/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/notes.jpg" alt="Notes" />
+              <span class="badge badge-stationery">Stationery</span>
+            </div>
+            <div class="item-body">
+              <h3>Class Notes – 3rd Sem CSE</h3>
+              <p>Well-organised handwritten notes for core CSE subjects.</p>
+              <p class="item-meta">Available at KIET • From ₹30/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Entertainment -->
+      <section id="entertainment" class="items-section">
+        <div class="section-heading">
+          <h2>Entertainment</h2>
+          <p>Relax between lectures with games and music.</p>
+        </div>
+
+        <div class="items-grid">
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/Headphones.png" alt="Headphones" />
+              <span class="badge badge-entertainment">Entertainment</span>
+            </div>
+            <div class="item-body">
+              <h3>Headphones for Study Sessions</h3>
+              <p>Comfortable over-ear headphones, great for long study hours.</p>
+              <p class="item-meta">Available at KIET • From ₹60/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/card-games.jpg" alt="Board game" />
+              <span class="badge badge-entertainment">Entertainment</span>
+            </div>
+            <div class="item-body">
+              <h3>Playing cards</h3>
+              <p>UNO, Monopoly for hostel common room fun.</p>
+              <p class="item-meta">Available at KIET • From ₹70/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Misc -->
+      <section id="misc" class="items-section">
+        <div class="section-heading">
+          <h2>Miscellaneous</h2>
+          <p>Useful extra things you don’t always want to buy.</p>
+        </div>
+
+        <div class="items-grid">
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/backpack.jpg" alt="Backpack" />
+              <span class="badge badge-misc">Misc</span>
+            </div>
+            <div class="item-body">
+              <h3>Spare Backpack</h3>
+              <p>Ideal for short trips or project presentation days.</p>
+              <p class="item-meta">Available at KIET • From ₹35/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image-wrapper">
+              <img src="/Assets/Umbrella.jpg" alt="Umbrella" />
+              <span class="badge badge-misc">Misc</span>
+            </div>
+            <div class="item-body">
+              <h3>Large Umbrella</h3>
+              <p>Stay dry on rainy days while walking between blocks.</p>
+              <p class="item-meta">Available at KIET • From ₹20/day</p>
+              <a href="item.html" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Slide-in menu overlay + drawer -->
+    <label for="nav-toggle" class="nav-overlay"></label>
+
+    <aside class="nav-drawer">
+      <div class="nav-drawer-header">
+        <span>Browse ShareSpace</span>
+        <label for="nav-toggle" class="nav-close">✕</label>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Home</h3>
+        <a href="index.html">🏠 Home</a>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Categories</h3>
+        <a href="browse.html#sports">🏆 Sports</a>
+        <a href="browse.html#stationery">✏ Stationery</a>
+        <a href="browse.html#entertainment">🎧 Entertainment</a>
+        <a href="browse.html#misc">✨ Miscellaneous</a>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Actions</h3>
+        <a href="post-item.html">➕ Post an Item</a>
+        <a href="about.html#contact">❔ Help &amp; Support</a>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© ShareSpace – Campus sharing for KIET Group of Institutions, Ghaziabad</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="post-item.html">Post an Item</a>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="about.html#help">Help</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
