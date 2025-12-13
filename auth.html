@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/Assets/Untitled-design-Picsart-BackgroundRemover.ico">
+  <title>ShareSpace | Login & Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" />
+
+  <div class="page no-sidebar">
+    <header class="site-header">
+      <div class="header-inner">
+        <label for="nav-toggle" class="nav-toggle-btn">☰</label>
+
+        <a href="index.html" class="logo">
+          <div class="logo-image">
+  <img src="/Assets/Untitled-design-Picsart-BackgroundRemover.ico" alt="ShareSpace Logo">
+</div>
+
+          <div class="logo-text">
+            <span class="logo-title">ShareSpace</span>
+            <span class="logo-tagline">Share more, spend less</span>
+          </div>
+        </a>
+
+        <form class="search-bar">
+          <input type="text" placeholder="Search items, categories, or users…" />
+        </form>
+
+        <div class="header-right">
+          <label for="theme-toggle" class="theme-switch">
+            <span class="theme-icon theme-icon-sun">☀</span>
+            <span class="theme-icon theme-icon-moon">🌙</span>
+            <span class="theme-switch-knob"></span>
+          </label>
+
+          <div class="profile-menu">
+            <button type="button" class="profile-trigger">
+              <span class="avatar-circle">U</span>
+              <span class="profile-label">Account ▾</span>
+            </button>
+            <div class="profile-dropdown">
+              <a href="#login">Login</a>
+              <a href="#signup">Sign up with College ID</a>
+              <a href="browse.html#my-rentals">My Rentals</a>
+              <a href="browse.html#my-listings">My Listings</a>
+              <a href="item.html">Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content form-page auth-page">
+      <section class="form-card auth-layout">
+        <div class="auth-info">
+          <div class="auth-pill">KIET Campus Only</div>
+          <h1>Welcome to ShareSpace</h1>
+          <p>
+            Sign in with your KIET email to start borrowing and sharing items with
+            students and faculty. Keep campus light, sustainable, and connected.
+          </p>
+
+          <div class="auth-illustration">
+            <div class="auth-orbit auth-orbit-1"></div>
+            <div class="auth-orbit auth-orbit-2"></div>
+            <div class="auth-orbit auth-orbit-3"></div>
+            <span class="auth-orbit-center">KIET</span>
+          </div>
+        </div>
+
+        <div class="auth-forms">
+          <section id="login" class="auth-section">
+            <h2>Login</h2>
+            <form class="share-form">
+              <div class="form-field">
+                <label for="login-email">KIET Email</label>
+                <input type="email" id="login-email" placeholder="yourname@kiet.edu" />
+              </div>
+              <div class="form-field">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" />
+              </div>
+              <button type="button" class="btn btn-primary form-submit">Login</button>
+            </form>
+          </section>
+
+          <div class="auth-divider"><span>or</span></div>
+
+          <section id="signup" class="auth-section">
+            <h2>Sign up with College ID</h2>
+            <form class="share-form">
+              <div class="form-field">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="e.g., Utkarsh Chandra Singh" />
+              </div>
+
+              <div class="form-field">
+                <label for="signup-email">KIET Email</label>
+                <input type="email" id="signup-email" placeholder="must end with @kiet.edu" />
+              </div>
+
+              <div class="form-field">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" />
+              </div>
+
+              <div class="form-field">
+                <label for="signup-confirm">Confirm Password</label>
+                <input type="password" id="signup-confirm" placeholder="Re-enter password" />
+              </div>
+
+              <div class="form-field">
+                <label for="signup-branch">Branch / Year</label>
+                <select id="signup-branch">
+                  <option>CSE 1st Year</option>
+                  <option>CSE 2nd Year</option>
+                  <option>CSE 3rd Year</option>
+                  <option>CSE 4th Year</option>
+                  <option>ECE</option>
+                  <option>EEE</option>
+                  <option>Mechanical</option>
+                  <option>Civil</option>
+                  <option>Faculty</option>
+                </select>
+              </div>
+
+              <button type="button" class="btn btn-outline form-submit">Create Account</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- drawer -->
+    <label for="nav-toggle" class="nav-overlay"></label>
+
+    <aside class="nav-drawer">
+      <div class="nav-drawer-header">
+        <span>Browse ShareSpace</span>
+        <label for="nav-toggle" class="nav-close">✕</label>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Home</h3>
+        <a href="index.html">🏠 Home</a>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Categories</h3>
+        <a href="browse.html#sports">🏆 Sports</a>
+        <a href="browse.html#stationery">✏ Stationery</a>
+        <a href="browse.html#entertainment">🎧 Entertainment</a>
+        <a href="browse.html#misc">✨ Miscellaneous</a>
+      </div>
+
+      <div class="nav-drawer-section">
+        <h3>Actions</h3>
+        <a href="post-item.html">➕ Post an Item</a>
+        <a href="about.html#contact">❔ Help &amp; Support</a>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© ShareSpace – Campus sharing for KIET Group of Institutions, Ghaziabad</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="post-item.html">Post an Item</a>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="about.html#help">Help</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
